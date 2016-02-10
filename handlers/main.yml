@@ -1,0 +1,4 @@
+---
+# unused until we create splunk service
+- name: start splunk
+  service: name=splunk state=started

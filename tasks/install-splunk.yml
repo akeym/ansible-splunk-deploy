@@ -1,0 +1,6 @@
+---
+- name: copy & unpack splunk.tgz
+  unarchive:
+    src=files/splunk.tgz
+    dest=/opt
+    creates=/opt/splunk/bin/splunkd

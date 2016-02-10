@@ -1,0 +1,3 @@
+---
+- include: install-splunk.yml
+- include: splunk-user.yml

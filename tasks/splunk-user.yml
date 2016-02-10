@@ -1,0 +1,14 @@
+---
+- name: create splunk group
+  group: name=splunk
+
+- name: create splunk user
+  user: name=splunk group=splunk createhome=no home=/opt/splunk shell=/bin/bash
+
+- name: own splunk directory
+  file:
+    path=/opt/splunk
+    state=directory
+    recurse=yes
+    owner=splunk
+    group=splunk
